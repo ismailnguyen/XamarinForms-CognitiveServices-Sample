@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace XamarinForms_CognitiveServices_Sample
 {
@@ -13,7 +8,7 @@ namespace XamarinForms_CognitiveServices_Sample
         {
             InitializeComponent();
 
-            MainPage = new XamarinForms_CognitiveServices_Sample.MainPage();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()

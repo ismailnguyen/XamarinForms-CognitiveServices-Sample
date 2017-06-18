@@ -4,6 +4,20 @@
              xmlns:local="clr-namespace:XamarinForms_CognitiveServices_Sample"
              x:Class="XamarinForms_CognitiveServices_Sample.MainPage">
 
+    <Grid>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" Text="Start" Command="{Binding EmotionStart}" />
+
+        <Image Grid.Row="1" Aspect="AspectFit" Source="{Binding PhotoSource}" HorizontalOptions="Center" />
+
+        <ListView Grid.Row="2" ItemsSource="{Binding Report}" BackgroundColor="Black"/>
+
+    </Grid>
 
 </ContentPage>
