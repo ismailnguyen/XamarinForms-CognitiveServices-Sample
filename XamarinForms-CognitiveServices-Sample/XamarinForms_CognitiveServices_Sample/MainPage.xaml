@@ -6,17 +6,50 @@
 
     <Grid>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="40" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
+            <RowDefinition Height="80" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
         </Grid.RowDefinitions>
 
-        <Button Grid.Row="0" Text="Start" Command="{Binding EmotionStart}" />
+        <Button Grid.Row="0" Grid.Column="0" Text="Start" Command="{Binding EmotionStart}" />
 
-        <Image Grid.Row="1" Aspect="AspectFit" Source="{Binding PhotoSource}" HorizontalOptions="Center" />
+        <Image Grid.Row="1" Grid.Column="1" Aspect="AspectFit" Source="{Binding PhotoSource}" HorizontalOptions="Center" />
 
-        <ListView Grid.Row="2" ItemsSource="{Binding Report}" BackgroundColor="Black"/>
+        <Label Grid.Row="2" Grid.Column="0" Text="Anger" />
+        <Label Grid.Row="2" Grid.Column="1" Text="{Binding Emotion.Anger}" />
+
+        <Label Grid.Row="3" Grid.Column="0" Text="Contempt" />
+        <Label Grid.Row="3" Grid.Column="1" Text="{Binding Emotion.Contempt}" />
+
+        <Label Grid.Row="4" Grid.Column="0" Text="Disgust" />
+        <Label Grid.Row="4" Grid.Column="1" Text="{Binding Emotion.Disgust}" />
+
+        <Label Grid.Row="5" Grid.Column="0" Text="Fear" />
+        <Label Grid.Row="5" Grid.Column="1" Text="{Binding Emotion.Fear}" />
+
+        <Label Grid.Row="6" Grid.Column="0" Text="Happiness" />
+        <Label Grid.Row="6" Grid.Column="1" Text="{Binding Emotion.Happiness}" />
+
+        <Label Grid.Row="7" Grid.Column="0" Text="Neutral" />
+        <Label Grid.Row="7" Grid.Column="1" Text="{Binding Emotion.Neutral}" />
+
+        <Label Grid.Row="8" Grid.Column="0" Text="Sadness" />
+        <Label Grid.Row="8" Grid.Column="1" Text="{Binding Emotion.Sadness}" />
+
+        <Label Grid.Row="9" Grid.Column="0" Text="Surprise" />
+        <Label Grid.Row="9" Grid.Column="1" Text="{Binding Emotion.Surprise}" />
 
     </Grid>
 

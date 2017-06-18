@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using XamarinForms_CognitiveServices_Sample.ViewModel;
 
 namespace XamarinForms_CognitiveServices_Sample
 {
